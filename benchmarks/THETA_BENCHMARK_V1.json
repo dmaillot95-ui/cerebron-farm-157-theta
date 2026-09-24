@@ -1,0 +1,30 @@
+{
+  "schema": "THETA_BENCHMARK_V1",
+  "status": "FROZEN_TEMPLATE_NO_RESULTS",
+  "role_id": "REPRESENTATION_TRANSFORMER",
+  "domains": [
+    "representation_change",
+    "symbolic_form",
+    "geometric_form",
+    "algorithmic_form",
+    "graph_form",
+    "cross_representation_consistency"
+  ],
+  "m6_rule": "M6_NEVER_IN_TRAIN",
+  "modes": [
+    "BASE_MODEL_ALONE",
+    "THETA_PRETRAIN_SCAFFOLD",
+    "THETA_TRAINED",
+    "THETA_PLUS_MINIMAL_COALITION"
+  ],
+  "metrics": [
+    "role_accuracy",
+    "critical_error_rate",
+    "calibration",
+    "transfer",
+    "regression",
+    "latency",
+    "provenance_completeness"
+  ],
+  "result_status": "NO_EXECUTED_BASELINE_YET"
+}

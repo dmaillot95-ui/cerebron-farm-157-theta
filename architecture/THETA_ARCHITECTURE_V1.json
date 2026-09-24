@@ -1,0 +1,66 @@
+{
+  "schema": "THETA_ARCHITECTURE_V1",
+  "farm_id": 157,
+  "name": "THETA",
+  "status": "SCAFFOLDED_NOT_TRAINED",
+  "greek_constellation": true,
+  "role_id": "REPRESENTATION_TRANSFORMER",
+  "mission": "Transform a problem between mathematical, graphical, symbolic, geometric, algorithmic and natural-language representations to expose hidden structure.",
+  "boundary": "Does not generate the broad hypothesis population; HYPERION does.",
+  "shared_base_family": "CEREBRON_GREEK_SHARED_BASE",
+  "runtime_changed": false,
+  "layers": [
+    {
+      "id": "L0",
+      "name": "BASE_MODEL",
+      "rule": "select by reproducible role benchmark"
+    },
+    {
+      "id": "L1",
+      "name": "THETA_CORE",
+      "rule": "Transform a problem between mathematical, graphical, symbolic, geometric, algorithmic and natural-language representations to expose hidden structure."
+    },
+    {
+      "id": "L2",
+      "name": "ADAPTERS",
+      "rule": "reversible adapters first"
+    },
+    {
+      "id": "L3",
+      "name": "MEMORY_INTERFACE",
+      "rule": "Memory Omega provenance and M6 isolation"
+    },
+    {
+      "id": "L4",
+      "name": "PI_SEARCH_INTERFACE",
+      "rule": "shared search directions when relevant; PI is not an oracle"
+    },
+    {
+      "id": "L5",
+      "name": "TOOLS_AND_FARMS",
+      "rule": "real execution receipts only"
+    },
+    {
+      "id": "L6",
+      "name": "CEREBRON_BOUNDARY",
+      "rule": "CEREBRON remains executive"
+    },
+    {
+      "id": "L7",
+      "name": "AFAH_REDTEAM",
+      "rule": "promotion requires audit"
+    }
+  ],
+  "campaign": {
+    "passes": 10,
+    "compression": "LOCAL_CAPSULE_TO_HYPERFUNNEL"
+  },
+  "rules": [
+    "REALITY>COHERENCE",
+    "EVIDENCE>CONFIDENCE",
+    "CLAIM<=EVIDENCE",
+    "M6_NEVER_IN_TRAIN",
+    "RUNTIME_FREEZE",
+    "SHARED_BASE!=INDEPENDENT_EVIDENCE"
+  ]
+}
